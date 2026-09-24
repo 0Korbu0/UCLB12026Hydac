@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>495</x>
+      <y>360</y>
+      <w>216</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Medarbejder
+--
+medarbejderID: 101
+medarbejderNavn: Søren Bingus
+systemAdmin: true
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>495</x>
+      <y>234</y>
+      <w>216</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Gæst
+--
+gæstNavn: Hanne
+gæstFirma: Plantorama
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>828</x>
+      <y>288</y>
+      <w>216</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Gæstebog
+--
+dato: 1/1/1980
+ankomst: 8:00
+afgang: 11:00
+mødeAnsvarlig: 101
+harFåetSikkethedsFolder: true
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>495</x>
+      <y>486</y>
+      <w>216</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>AdmininstereMedarbejder
+--
+medarbejder 101
+medarbejder Søren Bingus
+string [5][5]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>306</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>342</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>432</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>153</x>
+      <y>360</y>
+      <w>279</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Logbog
+--
+medarbejderstatus[5][2]
+101			,	102			,	103		,	104		,	105
+Tilstede		,	Fraværende	,	Tilstede	,	Tilstede	,	Tilstede</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>423</x>
+      <y>396</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>828</x>
+      <y>504</y>
+      <w>216</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>Mødelokle
+--
+mødelokaleNavn: Hannes Hule</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>270</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>396</y>
+      <w>27</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>828</x>
+      <y>603</y>
+      <w>216</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Timeslot
+--
+timeSlots: [5]
+eks:
+8:00-11:00</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>927</x>
+      <y>540</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
