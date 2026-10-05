@@ -100,7 +100,7 @@ namespace KommeOgGåSystem
             string folder = safetyFolderDelivered ? "Ja" : "Nej";
             string meeting = meetingTime != null ? meetingTime.ToString() : "Eget kontor";
 
-            return $"Dato: {date,-10} | Gæst: {guest.GuestName,-16} | Firma: {guest.GuestCompany,-15} | Vært: {host.EmployeeName,-12} | Lokale: {meetingRoom.MeetingRoomName,-32} | Mødetid: {meeting,-13} | Ankomst: {arr,-5} | Afgang: {dep,-8} | Folder: {folder}";
+            return $"Dato: {date,-10} | Gæst: {guest.GuestName,-16} | Firma: {guest.GuestCompany,-15} | Vært: {host.EmployeeName,-12} \n    Lokale: {meetingRoom.MeetingRoomName,-33} | Mødetid: {meeting,-13} | Ankomst: {arr,-5} | Afgang: {dep,-8} | Folder: {folder}";
         }
     }
 }

@@ -330,7 +330,7 @@ namespace KommeOgGåSystem
             {
                 for (int i = 0; i < visits.Length; i++)
                 {
-                    Console.WriteLine(visits[i].MakePresentableInfo());
+                    Console.WriteLine($"[{ i + 1}] {visits[i].MakePresentableInfo()}");
                 }
             }
 
